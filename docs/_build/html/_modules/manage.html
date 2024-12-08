@@ -5,7 +5,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Overview: module code &mdash; Chennells Website 00.00.01 documentation</title>
+  <title>manage &mdash; Chennells Website 00.00.01 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
 
@@ -58,7 +58,8 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">Overview: module code</li>
+          <li class="breadcrumb-item"><a href="index.html">Module code</a></li>
+      <li class="breadcrumb-item active">manage</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -67,20 +68,33 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <h1>All modules for which code is available</h1>
-<ul><li><a href="main/apps.html">main.apps</a></li>
-<li><a href="main/views.html">main.views</a></li>
-<li><a href="manage.html">manage</a></li>
-<li><a href="members/apps.html">members.apps</a></li>
-<li><a href="members/forms.html">members.forms</a></li>
-<li><a href="members/views.html">members.views</a></li>
-<li><a href="products/apps.html">products.apps</a></li>
-<li><a href="products/migrations/0001_initial.html">products.migrations.0001_initial</a></li>
-<li><a href="products/migrations/0002_remove_product_category_remove_order_customer_and_more.html">products.migrations.0002_remove_product_category_remove_order_customer_and_more</a></li>
-<li><a href="products/migrations/0003_remove_cartitem_cart_remove_cartitem_price_and_more.html">products.migrations.0003_remove_cartitem_cart_remove_cartitem_price_and_more</a></li>
-<li><a href="products/models.html">products.models</a></li>
-<li><a href="products/views.html">products.views</a></li>
-</ul>
+  <h1>Source code for manage</h1><div class="highlight"><pre>
+<span></span><span class="ch">#!/usr/bin/env python</span>
+<span class="sd">&quot;&quot;&quot;Django&#39;s command-line utility for administrative tasks.&quot;&quot;&quot;</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+
+
+<div class="viewcode-block" id="main">
+<a class="viewcode-back" href="../manage.html#manage.main">[docs]</a>
+<span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Run administrative tasks.&quot;&quot;&quot;</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="s1">&#39;DJANGO_SETTINGS_MODULE&#39;</span><span class="p">,</span> <span class="s1">&#39;ChennellsFarmsHoldings.settings&#39;</span><span class="p">)</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="kn">from</span> <span class="nn">django.core.management</span> <span class="kn">import</span> <span class="n">execute_from_command_line</span>
+    <span class="k">except</span> <span class="ne">ImportError</span> <span class="k">as</span> <span class="n">exc</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">ImportError</span><span class="p">(</span>
+            <span class="s2">&quot;Couldn&#39;t import Django. Are you sure it&#39;s installed and &quot;</span>
+            <span class="s2">&quot;available on your PYTHONPATH environment variable? Did you &quot;</span>
+            <span class="s2">&quot;forget to activate a virtual environment?&quot;</span>
+        <span class="p">)</span> <span class="kn">from</span> <span class="nn">exc</span>
+    <span class="n">execute_from_command_line</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">)</span></div>
+
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="n">main</span><span class="p">()</span>
+</pre></div>
 
            </div>
           </div>
