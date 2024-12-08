@@ -6,16 +6,6 @@ from .forms import RegisterUserForm
 
 # Create your views here.
 def login_user(request):
-    # """Handles user login.
-
-    #     :param request: The HTTP request object containing the user's login information.
-
-    #     :returns: A Django HTTP response object:
-    #         On successful login: Redirects to a success page (home page) with a success message in the context.
-    #         On invalid login: Renders the login form again with an error message in the context.
-
-    #     :rtype: Instance of HttpResponse class
-    # """
     """Handles user login.
 
     Args:
