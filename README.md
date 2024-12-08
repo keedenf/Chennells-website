@@ -14,12 +14,15 @@
 ### 1. Prerequisites
 
 > **Git**
+
 > https://git-scm.com/downloads
 
 > **Python**
+
 > https://www.python.org/downloads/ (version specified in requirements.txt)
 
 > **Docker Desktop**
+
 > https://www.docker.com/ (for Docker container build and execution)
 
 ### 2. Clone the repository
