@@ -69,5 +69,6 @@ _**Windows:**_
 
 > **Bash**
 
-> docker run --publish 8000:8000 chennells website
+> docker run --publish 8000:8000 chennells-website
+
 _This command maps the container port (usually unspecified) to your host machine port 8000. You can access the application by visiting http://localhost:8000 in your web browser._
